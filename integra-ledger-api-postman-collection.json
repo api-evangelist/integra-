@@ -1,0 +1,175 @@
+{
+    "id": "a3acddf91aeb083688cf1fb19aa035ee",
+    "name": "Integra Ledger API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "5131a8a3403048499b5c1c8feed43710",
+            "name": "IdentityExists (GET)",
+            "url": "httpsintegraledger.azure-api.net\/api\/v1.2\/IdentityExists",
+            "description": "Check for the existence of a identityId on the Integra Ledger.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "identityId",
+                    "description": "the identityId to check for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3acddf91aeb083688cf1fb19aa035ee",
+            "rawModeData": ""
+        },
+        {
+            "id": "3a4781b46d738eccdaf902a01e0f7653",
+            "name": "KeyForOwner (GET)",
+            "url": "httpsintegraledger.azure-api.net\/api\/v1.2\/KeyForOwner",
+            "description": "Register a PKI Public Key on the Integra Ledger.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "owner",
+                    "description": "the identifier of the owner of the key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "nameSpace",
+                    "description": "the nameSpace of the key registry",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3acddf91aeb083688cf1fb19aa035ee",
+            "rawModeData": ""
+        },
+        {
+            "id": "824b78b7c90673265b2327851c0e598b",
+            "name": "RegisterIdentity (POST)",
+            "url": "httpsintegraledger.azure-api.net\/api\/v1.2\/RegisterIdentity",
+            "description": "Register a new identity on the Integra Ledger passing in",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "formVals",
+                    "description": "-- type \u2013 use whatever string you want as the name space\n\n--value (optional) \u2013 the value to be stored. In the example we are using a SHA256 Has of a document\n\n-- metaData (optional) \u2013 pass any metadata as a string",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3acddf91aeb083688cf1fb19aa035ee",
+            "rawModeData": ""
+        },
+        {
+            "id": "4841e59ed783cc7d97466299a4dd5c20",
+            "name": "RegisterKey (POST)",
+            "url": "httpsintegraledger.azure-api.net\/api\/v1.2\/RegisterKey",
+            "description": "Register a PKI Public Key on the Integra Ledger passing in",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "keyFormVals",
+                    "description": "-- keyOwner \u2013 the identifier of the owner of the key\n\n-- nameSpace (optional) \u2013 the nameSpace of the key registry Has of a document\n\n-- keyValue \u2013 the PKI Public Key value",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3acddf91aeb083688cf1fb19aa035ee",
+            "rawModeData": ""
+        },
+        {
+            "id": "9b485e5391920a1cd45471d3ca7f2cf6",
+            "name": "ValueExists (GET)",
+            "url": "httpsintegraledger.azure-api.net\/api\/v1.2\/ValueExists",
+            "description": "Check for the existence of a value on the Integra Ledger.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "value",
+                    "description": "the value to check for",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a3acddf91aeb083688cf1fb19aa035ee",
+            "rawModeData": ""
+        }
+    ]
+}
