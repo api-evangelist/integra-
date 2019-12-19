@@ -1,0 +1,73 @@
+{
+    "name": "Integra",
+    "description": "Integra Ledger is an enterprise blockchain designed specifically for the world\u2019s legal industry. It integrates with existing legal software to improve data integrity, security, interoperability, and productivity.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/Screen Shot 2019-08-26 at 7.03.53 PM.png",
+    "tags": [
+        "artificial intelligence",
+        "blockchain",
+        "contracts",
+        "documents",
+        "have api",
+        "information governance",
+        "integrity",
+        "ledger",
+        "legal",
+        "profile",
+        "records management"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/integra-\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Integra Ledger API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/Screen Shot 2019-08-26 at 7.03.53 PM.png",
+            "humanURL": "http:\/\/integraledger.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/integra-ledger-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/integra-ledger-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/integra-ledger-api-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Contact Form",
+            "url": "https:\/\/integraledger.com\/contact-us\/"
+        },
+        {
+            "type": "Documentation",
+            "url": "https:\/\/integraledger.com\/api\/"
+        },
+        {
+            "type": "News",
+            "url": "https:\/\/integraledger.com\/news\/"
+        },
+        {
+            "type": "Privacy",
+            "url": "https:\/\/integraledger.com\/privacy-policy\/"
+        },
+        {
+            "type": "Terms of Service",
+            "url": "https:\/\/integraledger.com\/Terms-of-Use\/"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/integraledger.com"
+        }
+    ]
+}
