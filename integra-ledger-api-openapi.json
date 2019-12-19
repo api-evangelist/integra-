@@ -1,0 +1,238 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Integra Ledger API",
+        "description": "This is the Gateway for accessing the Integra Ledger API.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsintegraledger.azure-api.net\/api\/v1.2"
+    ],
+    "paths": {
+        "\/IdentityExists": {
+            "get": {
+                "summary": "IdentityExists (GET)",
+                "description": "Check for the existence of a identityId on the Integra Ledger.",
+                "operationId": "ApiIdentityExistsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "identityId",
+                        "in": "query",
+                        "description": "the identityId to check for"
+                    }
+                ]
+            }
+        },
+        "\/KeyForOwner": {
+            "get": {
+                "summary": "KeyForOwner (GET)",
+                "description": "Register a PKI Public Key on the Integra Ledger.",
+                "operationId": "ApiKeyForOwnerGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "owner",
+                        "in": "query",
+                        "description": "the identifier of the owner of the key"
+                    },
+                    {
+                        "name": "nameSpace",
+                        "in": "query",
+                        "description": "the nameSpace of the key registry"
+                    }
+                ]
+            }
+        },
+        "\/RegisterIdentity": {
+            "post": {
+                "summary": "RegisterIdentity (POST)",
+                "description": "Register a new identity on the Integra Ledger passing in",
+                "operationId": "ApiRegisterIdentityPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "formVals",
+                        "in": "body",
+                        "description": "-- type \u2013 use whatever string you want as the name space\n\n--value (optional) \u2013 the value to be stored. In the example we are using a SHA256 Has of a document\n\n-- metaData (optional) \u2013 pass any metadata as a string"
+                    }
+                ]
+            }
+        },
+        "\/RegisterKey": {
+            "post": {
+                "summary": "RegisterKey (POST)",
+                "description": "Register a PKI Public Key on the Integra Ledger passing in",
+                "operationId": "ApiRegisterKeyPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "keyFormVals",
+                        "in": "body",
+                        "description": "-- keyOwner \u2013 the identifier of the owner of the key\n\n-- nameSpace (optional) \u2013 the nameSpace of the key registry Has of a document\n\n-- keyValue \u2013 the PKI Public Key value"
+                    }
+                ]
+            }
+        },
+        "\/ValueExists": {
+            "get": {
+                "summary": "ValueExists (GET)",
+                "description": "Check for the existence of a value on the Integra Ledger.",
+                "operationId": "ApiValueExistsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "query",
+                        "description": "the value to check for"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "IdentityExists": {
+                "type": "object",
+                "properties": {
+                    "exists": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "IntegraData": {
+                "type": "object",
+                "properties": {
+                    "$class": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "identityId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "identityType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "creationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "metaData": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "KeyExists": {
+                "type": "object",
+                "properties": {
+                    "exists": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "OwnerKey": {
+                "type": "object",
+                "properties": {
+                    "$class": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "owner": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keyValue": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "FormVals": {
+                "type": "object",
+                "properties": {
+                    "identityType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "metaData": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Identity": {
+                "type": "object",
+                "properties": {
+                    "$class": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "identityId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "identityType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "metaData": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "transactionId": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "KeyFormVals": {
+                "type": "object",
+                "properties": {
+                    "owner": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "keyValue": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ValueExists": {
+                "type": "object",
+                "properties": {
+                    "exists": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
