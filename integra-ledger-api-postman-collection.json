@@ -1,5 +1,5 @@
 {
-    "id": "a3acddf91aeb083688cf1fb19aa035ee",
+    "id": "27c944a7592516af9d81825290353e36",
     "name": "Integra Ledger API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "5131a8a3403048499b5c1c8feed43710",
+            "id": "6d1096577beaa7449175521cf76a2b91",
             "name": "IdentityExists (GET)",
             "url": "httpsintegraledger.azure-api.net\/api\/v1.2\/IdentityExists",
             "description": "Check for the existence of a identityId on the Integra Ledger.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a3acddf91aeb083688cf1fb19aa035ee",
+            "collectionId": "27c944a7592516af9d81825290353e36",
             "rawModeData": ""
         },
         {
-            "id": "3a4781b46d738eccdaf902a01e0f7653",
+            "id": "83b5e347d325ff23f26c7a3504452ca2",
             "name": "KeyForOwner (GET)",
             "url": "httpsintegraledger.azure-api.net\/api\/v1.2\/KeyForOwner",
             "description": "Register a PKI Public Key on the Integra Ledger.",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a3acddf91aeb083688cf1fb19aa035ee",
+            "collectionId": "27c944a7592516af9d81825290353e36",
             "rawModeData": ""
         },
         {
-            "id": "824b78b7c90673265b2327851c0e598b",
+            "id": "b50e446f7af37b00ab1093302963b80e",
             "name": "RegisterIdentity (POST)",
             "url": "httpsintegraledger.azure-api.net\/api\/v1.2\/RegisterIdentity",
             "description": "Register a new identity on the Integra Ledger passing in",
@@ -106,11 +106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a3acddf91aeb083688cf1fb19aa035ee",
+            "collectionId": "27c944a7592516af9d81825290353e36",
             "rawModeData": ""
         },
         {
-            "id": "4841e59ed783cc7d97466299a4dd5c20",
+            "id": "8c8905b7fc45a3f9f277c3a296aba819",
             "name": "RegisterKey (POST)",
             "url": "httpsintegraledger.azure-api.net\/api\/v1.2\/RegisterKey",
             "description": "Register a PKI Public Key on the Integra Ledger passing in",
@@ -137,11 +137,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a3acddf91aeb083688cf1fb19aa035ee",
+            "collectionId": "27c944a7592516af9d81825290353e36",
             "rawModeData": ""
         },
         {
-            "id": "9b485e5391920a1cd45471d3ca7f2cf6",
+            "id": "e8cba582fd7461797e1360551aa5061d",
             "name": "ValueExists (GET)",
             "url": "httpsintegraledger.azure-api.net\/api\/v1.2\/ValueExists",
             "description": "Check for the existence of a value on the Integra Ledger.",
@@ -168,7 +168,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a3acddf91aeb083688cf1fb19aa035ee",
+            "collectionId": "27c944a7592516af9d81825290353e36",
             "rawModeData": ""
         }
     ]
